@@ -1,6 +1,6 @@
 import { GetElement} from "../index/functions.js";
 import { listIntro} from "./listgsap.js";
-import { taskList,add_todo_func,completed_list} from "./llistFunctions.js";
+import { taskList,add_todo_func,completed_list,deleted_list} from "./llistFunctions.js";
 
 const body = GetElement('body');
 body.addEventListener('load',listIntro());
@@ -15,4 +15,5 @@ add_todo.addEventListener('click', add_todo_func);
 const completed_todo = GetElement('#completed-todo');
 completed_todo.addEventListener('click',completed_list)
 
-const deleted_todo = GetElement('#deleted_todo');
+const deleted_todo = GetElement('#deleted-todo');
+deleted_todo.addEventListener('click',deleted_list);

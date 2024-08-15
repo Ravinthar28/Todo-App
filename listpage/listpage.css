@@ -146,15 +146,15 @@ body{
   opacity:0;
 }
 
-#task_title_container,#add-title-container,#completed_title-container{
+#task_title_container,#add-title-container,#completed_title-container,#deleted_title_container{
   overflow: hidden;
 }
 
-#task_title,#add_title,#completed_title{
+#task_title,#add_title,#completed_title,#deleted_title{
   font-size:30px;
   font-family: "Roboto Mono", monospace;
 }
-#task_title span, #add_title span,#completed_title span{
+#task_title span, #add_title span,#completed_title span,#deleted_title span{
   font-size:50px;
   color:#6854b4;
 }

@@ -256,6 +256,76 @@ function complete_delete_fun(i){
   completed_task.splice(i,1);
   completed_task_code();
 }
+
+export function deleted_list(){
+  const tl = gsap.timeline({default:{duration:0.3}});
+  tl.to(contentContainer,{
+    x:1000,
+    opacity:0
+  });
+  deleted_task_code();
+  tl.fromTo(contentContainer,{
+    x:-1000,
+    opacity:0
+  },{
+    x:-50,
+    opacity:1
+  });
+
+  const complete_title = new SplitType('#deleted_title',{types: 'char'})
+  tl.from('.char',{
+    y:1000,
+    stagger:0.03,
+    duration:0.5,
+    delay:0.3
+  });
+  tl.from(`#task_list li`,{
+    y:-50,
+    ease:'power2.out',
+    stagger:0.5,
+    duration:1.2,
+    opacity:0
+  });
+
+}
   
+
+function deleted_task_code(){
+  let code = ``;
+  let list_element = ``;
+  deleted_task.forEach((x) => {
+    list_element += `<li>
+      ${x}
+      <button id = 'delete-btn' value = '${x}'>
+        <i class="fa-solid fa-trash"></i>
+      </button>
+      </li> `
+  });
+
+  code += `
+    <div id = 'deleted_title_container'>
+      <h2 id = 'deleted_title'>
+        <span>D</span>eleted
+        <span>T</span>asks !
+      </h2>
+    </div>
+  <ul id = 'task_list'>
+    ${list_element}
+  </ul>
+  `;
+  contentContainer.innerHTML = code;
+
+  let delete_btn = document.querySelectorAll('#delete-btn');
+  delete_btn.forEach((x,i)=>{
+    x.addEventListener('click',() => {
+      deleted_fun(i);
+    });
+  });
+}
+
+function deleted_fun(i){
+  deleted_task.splice(i,1);
+  deleted_task_code();
+}
 
 
