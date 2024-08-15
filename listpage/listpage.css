@@ -146,7 +146,7 @@ body{
   opacity:0;
 }
 
-#task_title_container,#add-title-container{
+#task_title_container,#add-title-container,#completed_title-container{
   overflow: hidden;
 }
 
