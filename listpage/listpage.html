@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TodoList</title>
+
+  <link rel="stylesheet" href="listpage.css">
+</head>
+<body>
+  <div id="outer-layer">
+    <div id="head-line">
+      <h2>
+        <span>H</span>ey 
+        <span>U</span>ser! 
+        <span>P</span>lan 
+        <span>Y</span>our 
+        <span>D</span>ay 
+        <span>W</span>isely 
+        <span>W</span>ith 
+        <span>T</span>ask<span>M</span>inder
+      </h2>
+    </div>
+    <div id="body-line">
+      <div id="sidebar">
+        <div id="list-container">
+          <i class="fa-solid fa-bars"></i>
+          <p id = 'task'>Tasks</p>
+        </div>
+        <div id="add-todo">
+          <i class="fa-solid fa-plus"></i>
+          <p id = 'add'>Add Todo</p>
+        </div>
+        <div id="completed-todo">
+          <i class="fa-solid fa-check"></i>
+          <p id = 'complete'>Completed Todo</p>
+        </div>
+        <div id="deleted-todo">
+          <i class="fa-solid fa-trash"></i>
+          <p id = 'delete'>Deleted Todo</p>
+        </div>
+      </div>
+      <div id="contents">
+        <!-- ALL THE CONTENTS ARE PLACED HERE -->
+      </div>
+    </div>
+  </div>
+
+
+  <script src="
+  https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js
+  "></script>
+  <script src="https://kit.fontawesome.com/6df0247b10.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+  <script type="module" src="list.js"></script>
+</body>
+</html>
