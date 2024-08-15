@@ -187,6 +187,41 @@ function delete_fun(i,x){
   taskList_code_generator();
 }
 
+export function completed_list(){
+  const tl = gsap.timeline({default:{duration:0.3}});
+  tl.to(contentContainer,{
+    x:1000,
+    opacity:0
+  });
+  let code = ``;
+  let list_element = ``;
+  completed_task.forEach((x,i) => {
+    list_element += `<li>
+      ${x}
+      <button id = 'delete-btn' value = '${x}'>
+        <i class="fa-solid fa-trash"></i>
+      </button>
+      </li> `
+  });
+
+  code += `
+    <h2 id = 'completed_title'>
+      <span>C</span>ompleted
+      <span>T</span>asks
+    </h2>
+  <ul id = 'task_list'>
+    ${list_element}
+  </ul>
+  `;
+  contentContainer.innerHTML = code;
+  tl.fromTo(contentContainer,{
+    x:-1000,
+    opacity:0
+  },{
+    x:-50,
+    opacity:1
+  });
+}
   
 
 

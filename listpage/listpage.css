@@ -150,11 +150,11 @@ body{
   overflow: hidden;
 }
 
-#task_title,#add_title{
+#task_title,#add_title,#completed_title{
   font-size:30px;
   font-family: "Roboto Mono", monospace;
 }
-#task_title span, #add_title span{
+#task_title span, #add_title span,#completed_title span{
   font-size:50px;
   color:#6854b4;
 }
