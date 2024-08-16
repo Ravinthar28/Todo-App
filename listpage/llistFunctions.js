@@ -20,6 +20,7 @@ export function initialInfo(){
     /* CODE TO LIST THE TASKS AFTER CLICKING THE TASKS BUTTON */
 
 export function taskList(){
+  console.log(localStorage.getItem(task_list));
   const tl = gsap.timeline({default:{duration:0.3}});
   tl.to(contentContainer,{
     x:1000,
