@@ -32,5 +32,3 @@ export let task_list = [
 export let completed_task = [];
 
 export let deleted_task = [];
-
-localStorage.setItem('task_list',JSON.stringify(task_list));
