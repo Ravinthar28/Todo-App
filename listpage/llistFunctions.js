@@ -18,15 +18,6 @@ export function initialInfo(){
   contentContainer.innerHTML = code;
 }
     
-    let Task_list = [];
-    localStorage.setItem('Task_list',JSON.stringify(Task_list));
-
-    let Completed_task = [];
-    localStorage.setItem('Completed_task',JSON.stringify(Completed_task));
-
-    let Deleted_task = [];
-    localStorage.setItem('Deleted_task',JSON.stringify('Deleted_task'));
-
     /* CODE TO LIST THE TASKS AFTER CLICKING THE TASKS BUTTON */
 
 
