@@ -271,6 +271,18 @@ body{
   #sidebar #task,#add,#complete,#delete{
     font-size: 13px;
   }
+  #contents{
+    margin-left:90px;
+    margin-top:50px;
+    width:150px;
+    overflow-x:auto
+  }
+  #initial-info-txt{
+    font-size:12px;
+  }
+  #initial-info #quote{
+    font-size:15px
+  }
 }
 
 @media screen and (min-width:600px) and (max-width:800px){
