@@ -268,20 +268,63 @@ body{
   #head-line h2{
     font-size:15px;
   }
-  #sidebar #task,#add,#complete,#delete{
-    font-size: 13px;
-  }
   #contents{
     margin-left:90px;
     margin-top:50px;
     width:150px;
-    overflow-x:auto
+    overflow-x:auto;
+  }
+  #initial-info{
+    width:400px;
   }
   #initial-info-txt{
     font-size:12px;
+    width:300px;
+    margin-left:10px;
   }
   #initial-info #quote{
-    font-size:15px
+    font-size:15px;
+    width:300px;
+    margin-left:10px;
+  }
+  #add_title span{
+    font-size:27px;
+  }
+  #task_title,#add_title,#completed_title,#deleted_title{
+    font-size:20px;
+  }
+  #task_list li{
+    font-size:14px;
+  }
+  #task_list li button{
+    font-size:14px;
+    padding:6px 12px;
+  }
+  #add-input-container p{
+    font-size:14px;
+  }
+  #add-input-box{
+    width:200px;
+    height:30px;
+    margin-top:20px;
+    margin-left:40px;
+    font-size:14px;
+    padding:10px 20px;
+  }
+  #add-input-box::placeholder{
+    font-size:12px;
+  }
+  #add-btn{
+    margin-left:190px;
+    font-size:14px;
+    padding:8px 12px;
+    width:100px;
+  }
+  #add-btn:hover{
+    margin-left:185px;
+  }
+  #add-btn:active{
+    margin-left:190px;
   }
 }
 
@@ -298,3 +341,4 @@ body{
     text-wrap:wrap;
   }
 }
+
